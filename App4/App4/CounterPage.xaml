@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             
+             x:Class="App4.CounterPage">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1*" />
+      <RowDefinition Height="3*" />
+      <RowDefinition Height="1*" />
+
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+
+    <Button  x:Name="btnSpeek"
+         Text="Test Speek"
+             
+             Grid.Row="2"
+             Grid.Column="0"
+             
+             ></Button>
+
+    <Button  x:Name="btn30"
+             Text="30"
+             Grid.Row="0"
+             Grid.Column="0"
+             Command="{Binding SetNewCounter}"
+             CommandParameter="30" ></Button>
+    
+    <Button  x:Name="btn40"
+             Text="40"
+             Grid.Row="0"
+             Grid.Column="1"
+             Command="{Binding SetNewCounter}"
+             CommandParameter="40" ></Button>
+
+    <Label Text="{Binding Counter}"
+           Grid.Row="1"
+           Grid.Column="0"
+           Grid.ColumnSpan="2"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"
+           FontSize="80" />
+
+  </Grid>
+</ContentPage>
