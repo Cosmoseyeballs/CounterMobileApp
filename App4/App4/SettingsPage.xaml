@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.SettingsPage">
+  <StackLayout>
+    <Label x:Name="sayEverySekLabel" Text="{Binding SayEverySek,StringFormat='Teksten skal gentages pr. {0} sek.', Mode=TwoWay}" ></Label>
+    <Entry x:Name="sayEverySek" Text="{Binding SayEverySek, Mode=TwoWay}" ></Entry>
+    
+    <Label x:Name="what2sayLabel" Text="Pr. intertaval, Hvad skal der siges?" ></Label>
+    <Entry x:Name="what2say" Text="{Binding What2say, Mode=TwoWay}"></Entry>
+  
+    <Label Text="Alt er gem med det samme"></Label>
+
+  </StackLayout>
+</ContentPage>

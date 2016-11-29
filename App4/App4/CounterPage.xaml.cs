@@ -17,15 +17,16 @@ namespace App4
             BindingContext = new CounterViewModel();
             InitializeComponent();
 
-            btnSpeek.Clicked += (a, b) => {
-                CrossTextToSpeech.Current.Speak("Jeg har en hat");
 
+
+            SettingsBtn.Clicked += (a, b) => {
+                Navigation.PushAsync(new SettingsPage(new SettingsPageViewModel()));
             };
 
             MessagingCenter.Subscribe<CounterViewModel, string[]>(this, "DisplayAlert", async (sender, values) =>
             {
-                await DisplayAlert(values[0], values[1], "Ok");
                 CrossTextToSpeech.Current.Speak("Text to speak");
+                await DisplayAlert(values[0], values[1], "Ok");
             });
 
         }

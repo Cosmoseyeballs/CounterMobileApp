@@ -13,7 +13,9 @@ namespace App4
         {
             InitializeComponent();
 
-            MainPage = new App4.CounterPage();
+            MainPage = new NavigationPage(new App4.CounterPage());
+            NavigationPage.SetHasNavigationBar(MainPage, false);
+
         }
 
         protected override void OnStart()

@@ -19,13 +19,7 @@
     </Grid.ColumnDefinitions>
 
 
-    <Button  x:Name="btnSpeek"
-         Text="Test Speek"
-             
-             Grid.Row="2"
-             Grid.Column="0"
-             
-             ></Button>
+
 
     <Button  x:Name="btn30"
              Text="30"
@@ -33,7 +27,7 @@
              Grid.Column="0"
              Command="{Binding SetNewCounter}"
              CommandParameter="30" ></Button>
-    
+
     <Button  x:Name="btn40"
              Text="40"
              Grid.Row="0"
@@ -48,6 +42,12 @@
            VerticalTextAlignment="Center"
            HorizontalTextAlignment="Center"
            FontSize="80" />
-
+    
+    <Button  x:Name="SettingsBtn"
+           Text="Settings"
+               Grid.Row="2"
+               Grid.Column="0"
+             
+             ></Button>
   </Grid>
 </ContentPage>
