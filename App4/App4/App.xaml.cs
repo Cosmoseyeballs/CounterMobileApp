@@ -15,7 +15,7 @@ namespace App4
 
             MainPage = new NavigationPage(new App4.CounterPage());
             NavigationPage.SetHasNavigationBar(MainPage, false);
-
+            //MainPage = new TestPage();
         }
 
         protected override void OnStart()
