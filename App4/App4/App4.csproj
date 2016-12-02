@@ -46,7 +46,6 @@
       <DependentUpon>CounterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="CounterViewModel.cs" />
-    <Compile Include="ImageClick.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -57,6 +56,11 @@
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SettingsPageViewModel.cs" />
+    <Compile Include="sliderConverter.cs" />
+    <Compile Include="SliderPage.xaml.cs">
+      <DependentUpon>SliderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SliderPageViewModel.cs" />
     <Compile Include="TestPage.xaml.cs">
       <DependentUpon>TestPage.xaml</DependentUpon>
     </Compile>
@@ -117,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SliderPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.SliderPage">
+
+  <StackLayout>
+     <Label x:Name="slider1Test" Text="0-300"></Label>
+    <Slider x:Name="slider1" Minimum="0" Maximum="300"></Slider>
+
+    <Label  x:Name="slider2Test" Text="0-3"></Label>
+    <Slider x:Name="slider2"  Minimum="0" Maximum="3"></Slider>
+  </StackLayout>
+</ContentPage>

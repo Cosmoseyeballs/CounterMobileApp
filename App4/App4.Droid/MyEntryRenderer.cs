@@ -15,7 +15,7 @@ using Xamarin.Forms;
 using App4.Droid;
 using App4;
 
-[assembly: ExportRenderer (typeof(MyEntry), typeof(MyEntryRenderer))]
+    [assembly: ExportRenderer (typeof(MyEntry), typeof(MyEntryRenderer))]
 namespace App4.Droid
 {
     class MyEntryRenderer : EntryRenderer

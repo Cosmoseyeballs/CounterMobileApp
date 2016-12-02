@@ -13,7 +13,7 @@ namespace App4
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new App4.CounterPage());
+            MainPage = new NavigationPage(new App4.SliderPage());
             NavigationPage.SetHasNavigationBar(MainPage, false);
             //MainPage = new TestPage();
         }
